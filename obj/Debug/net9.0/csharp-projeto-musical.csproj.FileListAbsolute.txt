@@ -12,3 +12,4 @@ C:\Users\vicenhlo\Desktop\csharp-projeto-musical\obj\Debug\net9.0\refint\csharp-
 C:\Users\vicenhlo\Desktop\csharp-projeto-musical\obj\Debug\net9.0\csharp-projeto-musical.pdb
 C:\Users\vicenhlo\Desktop\csharp-projeto-musical\obj\Debug\net9.0\csharp-projeto-musical.genruntimeconfig.cache
 C:\Users\vicenhlo\Desktop\csharp-projeto-musical\obj\Debug\net9.0\ref\csharp-projeto-musical.dll
+C:\Users\vicenhlo\Desktop\csharp-projeto-musical\obj\Debug\net9.0\csharp-projeto-musical.sourcelink.json
