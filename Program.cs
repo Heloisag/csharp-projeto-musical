@@ -1,19 +1,17 @@
-﻿// Agora que criei a classe musica, posso uar ela como se fosse um tipo de variavel, assim como String, Boolean, Int etc 
+﻿// Agora que criei a classe musica, posso usar ela como se fosse um tipo de variavel, assim como String, Boolean, Int etc 
+Album albumDoQueen = new Album();
+albumDoQueen.NomeDoAlbum = "A night at the opera";
 
-Musica musica1 = new Musica(); // <<-- objeto Musica();
-musica1.EscreveNomeDaMusica(Roxane);
-System.Console.WriteLine(musica1.LeNomeDaMusica());
-musica1.artistas = "The police";
-musica1.tempoDeDuraçãoDaMusica = 310;
-musica1.EscreveDisponibilidadeBooleana(true);
-System.Console.WriteLine(musica1.LeEscreveDisponibilidadeBooleana());
+Musica musica1 = new Musica();
+musica1.NomeDaMusica = "Love of my life";
+musica1.TempoDeDuraçãoDaMusica = 213;
+
 
 Musica musica2 = new Musica();
-musica2.nomeDaMusica = "Vertical";
-musica2.artistas = "U2";
-musica2.tempoDeDuraçãoDaMusica = 311;
-musica2.EscreveDisponibilidadeBooleana(false);
-System.Console.WriteLine(musica2.LeEscreveDisponibilidadeBooleana());
+musica2.NomeDaMusica = "Bohemian Rhapsody";
+musica1.TempoDeDuraçãoDaMusica = 354;
 
-musica1.FichaTecnicaDaMusica();
-musica2.FichaTecnicaDaMusica(); 
+
+albumDoQueen.ColecaoDeMusicas(musica1);
+albumDoQueen.ColecaoDeMusicas(musica2);
+albumDoQueen.ExibirColecaoDeMusicasDoAlbum();

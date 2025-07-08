@@ -1,41 +1,19 @@
 class Musica
 {
-    private string? nomeDaMusica;
-    private string? artistas;
-    private int tempoDeDuraçãoDaMusica;
-    private bool disponibilidadeNoPlano; // <<-- bool é a variavel de Boolean // private - acesso é feito apenas dentro dessa "chave" 
-
-    public void EscreveNomeDaMusica(string value)
-    {
-        nomeDaMusica = value;
-    }
-    public string LeNomeDaMusica()
-    {
-        return nomeDaMusica;
-    }
-
-    public void EscreveArtista(string value)
-    {
-        artistas = value;
-    }
+    public string? NomeDaMusica { get; set; }
+    public string? Artistas { get; set; }
+    public int TempoDeDuraçãoDaMusica { get; set; }
+    public bool DisponibilidadeNoPlano { get; set; } // <<-- bool é a variavel de Boolean // private - acesso é feito apenas dentro dessa "chave" 
+    public string? ResumoDaMusica => $"A música {NomeDaMusica} pertence ao artista {Artistas}"; // Arrow function or lambda
+    // ResumoDaMusica é uma propriedade que retorna uma string formatada com o nome da música e o artista.    
 
 
-
-
-    public void EscreveDisponibilidadeBooleana(bool value)
-    {
-        disponibilidadeNoPlano = value;
-    }
-    public bool LeEscreveDisponibilidadeBooleana()
-    {
-        return disponibilidadeNoPlano;
-    }
     public void FichaTecnicaDaMusica()
     {
-        Console.WriteLine($"Nome: {nomeDaMusica}");
-        Console.WriteLine($"Artista: {artistas}");
-        System.Console.WriteLine($"Duração da musica: {tempoDeDuraçãoDaMusica}");
-        if (disponibilidadeNoPlano)
+        Console.WriteLine($"Nome: {NomeDaMusica}");
+        Console.WriteLine($"Artista: {Artistas}");
+        System.Console.WriteLine($"Duração da musica: {TempoDeDuraçãoDaMusica}");
+        if (DisponibilidadeNoPlano)
         {
             System.Console.WriteLine("Está musica esta disponivel no plano atual! XD\n");
         }
@@ -45,4 +23,3 @@ class Musica
         }
     }
 }
-
