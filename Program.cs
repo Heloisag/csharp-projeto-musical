@@ -40,7 +40,7 @@ void Menu ()
             break;
         case 3: AvaliarBandas();
             break;
-        case 4: Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaInt);
+        case 4: MediaBandasAvaliadas();
             break;
         case 5: Console.WriteLine("Obrigada por usar o SoundSreen até a proxima! :D");
             break;
@@ -79,11 +79,6 @@ void MostraBandasRegistradas()
 
 void AvaliarBandas()
 {
-    //Qual banda deseja avaliar? 
-    // Essa banda Existe no dicionario ? 
-    // sim >> Atribua uma nota
-    // não >>> volte para o menu principal
-
     Console.Clear();
     ExibirTitulosMenu("Avaliar banda");
     Console.WriteLine("Digite o nome da banda que deseja avaliar: ");
@@ -92,21 +87,54 @@ void AvaliarBandas()
     {
         Console.WriteLine($"Qual sua nota para a {nomeDaBanda} banda? ");
         int notaDaBanda = int.Parse(Console.ReadLine()!);
-        dicionarioBandas[nomeDaBanda].Add(notaDaBanda);
-        Console.WriteLine($"A nota {notaDaBanda} foi registrada com sucesso para a banda {nomeDaBanda}");
+        dicionarioBandas[nomeDaBanda].Add(notaDaBanda); // <-- Abro o dicionario de bandas adicionadas na opção 01 do menu e uso a função .add para atribuir e armazenar uma nota para ela
+        Console.WriteLine($"\nA nota {notaDaBanda} foi registrada com sucesso para a banda {nomeDaBanda}");
         Thread.Sleep(2000);
-        Console.Clear();
+        Console.Clear(); // <-- limpa a tela e volta para o menu na função MENU();
         Menu();
     }
     else
     {
         Console.WriteLine($"A banda {nomeDaBanda} não esta registrada no sistema");
         Console.WriteLine("Digite qualquer tecla para retornar ao Menu");
-        Console.ReadKey();
+        Console.ReadKey(); // <-- Usuario digita uma tecla qualquer e é direcionado para o menu principal com a função Menu();
         Console.Clear();
         Menu();
     }
 }
+
+// void MediaBandasAvaliadas()
+// {
+//     // A banda que sera avaliada existe no cadastro? ok
+//     // sim >>> Calcule a média de acordo com as notas que o usuario digitou na opção 03
+//     // não >>> Mensagem dizendo que a banda não foi registrada.
+
+//     Console.Clear();
+
+//     ExibirTitulosMenu("Media das bandas avaliadas");
+//     Console.WriteLine("Qual banda você dejesa calcular a média?");
+//     string nomeDaBanda = Console.ReadLine()!;
+//     if (dicionarioBandas.ContainsKey(nomeDaBanda))
+//     {
+//         var notaDaBanda = dicionarioBandas[nomeDaBanda];
+//         double mediaCalculada = notaDaBanda.Average();
+//         int mediaCalculada = int.Parse(Console.ReadLine()!);
+//         Console.WriteLine($"A média da banda {nomeDaBanda} é de {mediaCalculada}");
+//         Thread.Sleep(2000);
+//         Console.Clear(); // <-- limpa a tela e volta para o menu na função MENU(); 
+//         Menu();
+//     }
+//     else
+//     {
+//         Console.WriteLine($"A banda {nomeDaBanda} não esta registrada no sistema");
+//         Console.WriteLine("Digite qualquer tecla para retornar ao Menu");
+//         Console.ReadKey(); // <-- Usuario digita uma tecla qualquer e é direcionado para o menu principal com a função Menu();
+//         Console.Clear();
+//         Menu();
+
+//     }
+
+// }
 
 void ExibirTitulosMenu(string titulo)
 {
@@ -115,7 +143,6 @@ void ExibirTitulosMenu(string titulo)
     Console.WriteLine(qtdAsteriscos);
     Console.WriteLine(titulo);
     Console.WriteLine(qtdAsteriscos + "\n");
-
 }
 
 Menu();
