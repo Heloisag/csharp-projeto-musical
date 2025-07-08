@@ -1,10 +1,35 @@
 class Musica
 {
-    public string? nomeDaMusica;
-    public string? artistas;
-    public int tempoDeDuraçãoDaMusica;
-    public bool disponibilidadeNoPlano; // <<-- bool é a variavel de Boolean
+    private string? nomeDaMusica;
+    private string? artistas;
+    private int tempoDeDuraçãoDaMusica;
+    private bool disponibilidadeNoPlano; // <<-- bool é a variavel de Boolean // private - acesso é feito apenas dentro dessa "chave" 
 
+    public void EscreveNomeDaMusica(string value)
+    {
+        nomeDaMusica = value;
+    }
+    public string LeNomeDaMusica()
+    {
+        return nomeDaMusica;
+    }
+
+    public void EscreveArtista(string value)
+    {
+        artistas = value;
+    }
+
+
+
+
+    public void EscreveDisponibilidadeBooleana(bool value)
+    {
+        disponibilidadeNoPlano = value;
+    }
+    public bool LeEscreveDisponibilidadeBooleana()
+    {
+        return disponibilidadeNoPlano;
+    }
     public void FichaTecnicaDaMusica()
     {
         Console.WriteLine($"Nome: {nomeDaMusica}");
