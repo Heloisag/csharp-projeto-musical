@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heloisa Goulart\\OneDrive\\Documentos\\Repositorios\\csharp-projeto-musical\\csharp-projeto-musical.csproj": {}
+    "C:\\Users\\vicenhlo\\Desktop\\C#\\csharp-projeto-musical\\csharp-projeto-musical.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heloisa Goulart\\OneDrive\\Documentos\\Repositorios\\csharp-projeto-musical\\csharp-projeto-musical.csproj": {
+    "C:\\Users\\vicenhlo\\Desktop\\C#\\csharp-projeto-musical\\csharp-projeto-musical.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heloisa Goulart\\OneDrive\\Documentos\\Repositorios\\csharp-projeto-musical\\csharp-projeto-musical.csproj",
+        "projectUniqueName": "C:\\Users\\vicenhlo\\Desktop\\C#\\csharp-projeto-musical\\csharp-projeto-musical.csproj",
         "projectName": "csharp-projeto-musical",
-        "projectPath": "C:\\Users\\Heloisa Goulart\\OneDrive\\Documentos\\Repositorios\\csharp-projeto-musical\\csharp-projeto-musical.csproj",
-        "packagesPath": "C:\\Users\\Heloisa Goulart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heloisa Goulart\\OneDrive\\Documentos\\Repositorios\\csharp-projeto-musical\\obj\\",
+        "projectPath": "C:\\Users\\vicenhlo\\Desktop\\C#\\csharp-projeto-musical\\csharp-projeto-musical.csproj",
+        "packagesPath": "C:\\Users\\vicenhlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vicenhlo\\Desktop\\C#\\csharp-projeto-musical\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Heloisa Goulart\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\vicenhlo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,14 @@
 class Album
 {
+    public Album(string nomeDoAlbum)
+    {
+        NomeDoAlbum = nomeDoAlbum;
+    }
+
     private List<Musica> listaDeMusicas = new List<Musica>();
     public string? NomeDoAlbum { get; set; }
-    public Genero? GeneroDoAlbum { get; set; }
+    
+    // public Genero? GeneroDoAlbum { get; set; }
     public int TempoDeDuracao => listaDeMusicas.Sum(tempoDeDuracaoTotalDasMusicasDoAlbum => tempoDeDuracaoTotalDasMusicasDoAlbum.TempoDeDuraçãoDaMusica);
 
     public void ColecaoDeMusicas(Musica musica)
