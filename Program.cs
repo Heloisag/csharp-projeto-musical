@@ -1,26 +1,12 @@
-﻿// Agora que criei a classe musica, posso usar ela como se fosse um tipo de variavel, assim como String, Boolean, Int etc 
-Banda queen = new Banda("Queen");
-Album albumDoQueen = new Album("A night at the opera");
+﻿Episodios ep1 = new(1, "Tecnicas de facilitação", 45);
+ep1.ConvidadosDoPodcast("Heloisa");
+ep1.ConvidadosDoPodcast("Leon");
 
-Musica musica1 = new Musica(queen, "Love of my life")
-{
-    TempoDeDuraçãoDaMusica = 213,
-    DisponibilidadeNoPlano = true,
-};
+Episodios ep2 = new(1, "Tecnicas de aprendizado", 67);
+ep2.ConvidadosDoPodcast("Heloisa");
+ep2.ConvidadosDoPodcast("Nicolas");
 
-Musica musica2 = new Musica(queen, "Bohemian Rhapsody")
-{ //<-- Iniciadores
-    TempoDeDuraçãoDaMusica = 354,
-    DisponibilidadeNoPlano = false,
-};
-
-albumDoQueen.ColecaoDeMusicas(musica1);
-albumDoQueen.ColecaoDeMusicas(musica2);
-queen.AdicionarAlbum(albumDoQueen);
-
-musica1.FichaTecnicaDaMusica();
-musica2.FichaTecnicaDaMusica();
-albumDoQueen.ExibirColecaoDeMusicasDoAlbum();
-queen.ExibirDiscografiaDoAlbum();
-
- 
+Podcast podcast = new("New Podcast", "Heloisa");
+podcast.AdicionarEpisodios(ep1);
+podcast.AdicionarEpisodios(ep2);
+podcast.ExibirDestalhesDoPodcast();
